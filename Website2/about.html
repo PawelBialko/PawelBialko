@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Foxhole Game</title>
+   <link rel="stylesheet" type="text/css" href="Website3.css">
+   <style>
+      /* Global body and html styles */
+      body, html {
+         margin: 0;
+         padding: 0;
+         height: 100%;
+         font-family: 'Arial', sans-serif;
+         background-color: #f7f7f7;
+         position: relative;
+         box-sizing: border-box;
+      }
+
+      /* Container to center content */
+      .container {
+         display: flex;
+         justify-content: center;
+         align-items: flex-start;
+         flex-wrap: wrap;
+         padding: 20px;
+         text-align: center;
+         min-height: 100vh;
+         position: relative;
+      }
+
+      /* Navbar styles */
+      .navbar {
+         display: flex;
+         justify-content: center;
+         gap: 20px;
+         background-color: #333;
+         padding: 10px 0;
+         width: 100%;
+         position: fixed;
+         top: 0;
+         z-index: 100;
+      }
+
+      .navbar a {
+         color: orange;
+         text-decoration: none;
+         font-size: 18px;
+         padding: 8px 20px;
+         border-radius: 4px;
+         transition: background-color 0.3s;
+      }
+
+      .navbar a:hover {
+         background-color: #444;
+         text-decoration: underline;
+      }
+
+      /* Image positioning */
+      .image-container {
+         position: relative;
+         width: 100%;
+         height: 400px;
+         display: flex;
+         justify-content: space-between;
+         margin-top: 60px; /* Space for the navbar */
+      }
+
+      .image-container img {
+         max-width: 45%;
+         height: auto;
+         border-radius: 8px;
+         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Content section styles */
+      .content-section {
+         max-width: 900px;
+         margin-top: 50px; /* Space for fixed navbar */
+         padding: 40px;
+         background-color: white;
+         border-radius: 10px;
+         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+         text-align: left;
+         color: #333;
+         font-size: 18px;
+         line-height: 1.8;
+         margin-bottom: 30px;
+      }
+
+      .content-section h2 {
+         font-size: 32px;
+         color: #222;
+         margin-bottom: 20px;
+      }
+
+      .content-section h3 {
+         font-size: 24px;
+         color: #444;
+         margin-top: 20px;
+         margin-bottom: 10px;
+         font-weight: bold;
+      }
+
+      .content-section p {
+         margin-bottom: 15px;
+         font-size: 18px;
+         line-height: 1.8;
+      }
+
+      .content-section p strong {
+         font-weight: bold;
+      }
+
+      /* Footer styles */
+      .footer {
+         position: relative;
+         width: 100%;
+         text-align: center;
+         font-size: 16px;
+         padding: 20px;
+         background-color: #333;
+         color: orange;
+         margin-top: 50px;
+         box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+         .navbar {
+            flex-direction: column;
+            gap: 10px;
+         }
+
+         .image-container img {
+            max-width: 90%;
+         }
+
+         .content-section {
+            padding: 20px;
+            font-size: 16px;
+         }
+      }
+   </style>
+</head>
+<body>
+
+   <!-- Navbar -->
+   <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="information.html">Information</a>
+      <a href="about.html">More Guides</a>
+      <a href="contact.html">Contact</a>
+   </div>
+
+   <!-- Main Content -->
+   <div class="container">
+      <div class="image-container">
+         <img src="Uniforms.jpg" alt="Foxhole Image" class="first-image">
+         <img src="Uniforms1.jpg" alt="Foxhole Image" class="second-image">
+      </div>
+
+      <div class="content-section">
+         <h2>Infantry Guide</h2>
+         
+         <h3>1. Basic Movement</h3>
+         <p><strong>WASD Keys:</strong> Move your character around.<br>
+            <strong>Shift:</strong> Sprint (use wisely, drains stamina).<br>
+            <strong>C:</strong> Crouch (reduces visibility and improves accuracy).<br>
+            <strong>X:</strong> Prone (lay down for better cover and accuracy).
+         </p>
+
+         <h3>2. Combat Essentials</h3>
+         <p><strong>Left Mouse Button (LMB):</strong> Fire your weapon.<br>
+            <strong>Right Mouse Button (RMB):</strong> Aim down sights for increased accuracy.<br>
+            <strong>R:</strong> Reload your weapon.<br>
+            <strong>F:</strong> Interact with objects (e.g., doors, vehicles, or supply crates).
+         </p>
+
+         <h3>3. Weapons</h3>
+         <p><strong>Rifles:</strong> Standard infantry weapon, effective at medium range.<br>
+            <strong>SMGs:</strong> Great for close-quarters combat with faster rate of fire but less range.<br>
+            <strong>Shotguns:</strong> Powerful at close range, excellent for clearing buildings.<br>
+            <strong>Grenades:</strong> Use for flushing out enemies or disrupting formations.<br>
+            <strong>Anti-Tank (AT) Weapons:</strong> Use these to disable or destroy enemy vehicles.
+         </p>
+
+         <h3>4. Communication</h3>
+         <p><strong>Voice Commands:</strong> Use voice commands (T) for quick communication like "Enemy spotted" or "Need ammo."<br>
+            <strong>Map Markers:</strong> Place markers (M) to give teammates visual directions.
+         </p>
+
+         <h3>5. Tactics</h3>
+         <p><strong>Cover & Concealment:</strong> Always move from cover to cover to reduce exposure.<br>
+            <strong>Teamwork:</strong> Coordinate with other infantry or vehicles for combined arms tactics.<br>
+            <strong>Flanking:</strong> Try to flank enemies rather than engage head-on. Move around the battlefield to catch enemies off guard.
+         </p>
+
+         <h3>6. Health & Supplies</h3>
+         <p><strong>Medkits:</strong> Heal yourself and teammates.<br>
+            <strong>Ammo Crates:</strong> Restock your ammo when supplies are low.<br>
+            <strong>Engineer:</strong> Engineers can repair vehicles, build fortifications, and lay down traps.
+         </p>
+      </div>
+   </div>
+
+   <!-- Footer -->
+   <div class="footer">
+      <p>CFIT Foxhole</p>
+   </div>
+
+</body>
+</html>

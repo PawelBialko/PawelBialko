@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Foxhole Game</title>
+   <link rel="stylesheet" type="text/css" href="Website3.css">
+   <style>
+      /* Global body and html styles */
+      body, html {
+         margin: 0;
+         padding: 0;
+         height: 100%;
+         font-family: 'Arial', sans-serif;
+         background-color: #f7f7f7;
+         position: relative;
+         box-sizing: border-box;
+      }
+
+      /* Container for centering content */
+      .container {
+         display: flex;
+         justify-content: center;
+         align-items: flex-start;
+         flex-wrap: wrap;
+         padding: 20px;
+         text-align: center;
+         min-height: 100vh;
+         position: relative;
+      }
+
+      /* Navbar styles */
+      .navbar {
+         display: flex;
+         justify-content: center;
+         gap: 20px;
+         background-color: #333;
+         padding: 15px 0;
+         width: 100%;
+         position: fixed;
+         top: 0;
+         z-index: 100;
+         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .navbar a {
+         color: orange;
+         text-decoration: none;
+         font-size: 18px;
+         padding: 8px 20px;
+         border-radius: 5px;
+         transition: background-color 0.3s;
+      }
+
+      .navbar a:hover {
+         background-color: #444;
+         text-decoration: underline;
+      }
+
+      /* Image container styles */
+      .image-container {
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+         position: relative;
+         margin-top: 80px; /* Space for navbar */
+         margin-bottom: 40px;
+      }
+
+      /* Main images */
+      .image-container img {
+         border-radius: 8px;
+         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+         width: 30%; /* Control the size of images */
+         height: auto;
+      }
+
+      /* Image positioning */
+      .image-container img.first-image {
+         margin-left: 10px;
+      }
+
+      .image-container img.second-image {
+         margin-right: 10px;
+      }
+
+      /* Right fixed image */
+      .image-container img.fourth-image {
+         position: fixed;
+         right: 20px;
+         top: 50%;
+         transform: translateY(-50%);
+         width: 350px; /* Adjust the width for a more appropriate size */
+         height: auto;
+         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Content section */
+      .content-section {
+         max-width: 900px;
+         padding: 40px;
+         background-color: white;
+         border-radius: 10px;
+         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+         color: #333;
+         font-size: 18px;
+         line-height: 1.6;
+         margin: 0 auto; /* Center content */
+      }
+
+      .content-section h2 {
+         font-size: 32px;
+         color: #222;
+         margin-bottom: 20px;
+      }
+
+      .content-section p {
+         margin-bottom: 20px;
+      }
+
+      /* Footer styles */
+      .footer {
+         width: 100%;
+         text-align: center;
+         font-size: 16px;
+         padding: 20px;
+         background-color: #333;
+         color: orange;
+         box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+         margin-top: 50px;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+         .navbar {
+            flex-direction: column;
+            gap: 10px;
+         }
+
+         .image-container {
+            flex-direction: column;
+            align-items: center;
+         }
+
+         .image-container img {
+            max-width: 80%;
+            margin: 10px 0;
+         }
+
+         .image-container img.fourth-image {
+            width: 250px;
+            top: 30%;
+         }
+
+         .content-section {
+            padding: 20px;
+            font-size: 16px;
+         }
+      }
+   </style>
+</head>
+<body>
+
+   <!-- Navbar -->
+   <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="information.html">Information</a>
+      <a href="about.html">More Guides</a>
+      <a href="contact.html">Contact</a>
+   </div>
+
+   <!-- Main Content -->
+   <div class="container">
+      <div class="image-container">
+         <img src="Foxhole.JPEG" alt="Foxhole Image" class="first-image">
+         <img src="Emblem.png" alt="Map Image" class="second-image">
+         <img src="Flag.jpg" alt="Another Image" class="fourth-image"> <!-- Fixed image on the right -->
+      </div>
+   <!--this is the main text of the page. -->
+      <div class="content-section">
+         <h2>About Foxhole</h2>
+         <p>Foxhole is a massively multiplayer online game that blends real-time strategy with large-scale warfare. Developed by Cliffhanger Games, it immerses players in a persistent, player-driven world where they are tasked with participating in a prolonged, collaborative war effort. Set in a fictional, World War I-inspired universe, Foxhole emphasizes teamwork, resource management, and strategic planning.</p>
+
+         <p>In Foxhole, players join one of two factions — typically represented by two warring sides — and engage in large-scale battles. The game is notable for its focus on logistics, with players needing to gather and transport resources, construct fortifications, and support their faction's war effort in a variety of roles. From frontline combat to supporting roles like medics, engineers, or supply drivers, everyone has a vital part to play.</p>
+
+         <p>The battlefield in Foxhole is constantly evolving, and the results of every battle have a lasting impact on the world, which is persistent between sessions. Players can fight in massive, open-world environments with a top-down view, and the battles can span multiple days or even weeks. Strategic depth is added by the need for cooperation, coordination, and long-term planning, making every player's actions crucial to the outcome of the war.</p>
+
+         <p>In addition to combat, the game also features crafting and base-building systems, allowing players to create weapons, vehicles, and defensive structures. The focus on logistics and resource management makes it a unique blend of both tactical combat and large-scale strategy. Players must work together, organizing supply lines, building infrastructure, and ensuring their forces are well-equipped for the battle ahead.</p>
+      </div>
+   </div>
+
+   <!-- Footer -->
+   <div class="footer">
+      <p>CFIT Foxhole</p>
+   </div>
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Foxhole Game</title>
+   <link rel="stylesheet" type="text/css" href="Website3.css">
+   <style>
+      /* Global body and html styles */
+      body, html {
+         margin: 0;
+         padding: 0;
+         height: 100%;
+         font-family: 'Arial', sans-serif;
+         background-color: #f7f7f7;
+         position: relative;
+         box-sizing: border-box;
+      }
+
+      /* Container to center content */
+      .container {
+         display: flex;
+         justify-content: center;
+         align-items: flex-start;
+         flex-wrap: wrap;
+         padding: 20px;
+         text-align: center;
+         min-height: 100vh;
+         position: relative;
+      }
+
+      /* Navbar styles */
+      .navbar {
+         display: flex;
+         justify-content: center;
+         gap: 20px;
+         background-color: #333;
+         padding: 10px 0;
+         width: 100%;
+         position: fixed;
+         top: 0;
+         z-index: 100;
+      }
+
+      .navbar a {
+         color: orange;
+         text-decoration: none;
+         font-size: 18px;
+         padding: 8px 20px;
+         border-radius: 4px;
+         transition: background-color 0.3s;
+      }
+
+      .navbar a:hover {
+         background-color: #444;
+         text-decoration: underline;
+      }
+
+      /* Image positioning */
+      .image-container {
+         position: relative;
+         width: 100%;
+         height: 400px;
+         display: flex;
+         justify-content: space-between;
+         margin-top: 60px; /* Space for the navbar */
+      }
+
+      .image-container img {
+         max-width: 45%;
+         height: auto;
+         border-radius: 8px;
+         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Content section styles */
+      .content-section {
+         max-width: 900px;
+         margin-top: 50px; /* Space for fixed navbar */
+         padding: 40px;
+         background-color: white;
+         border-radius: 10px;
+         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+         text-align: left;
+         color: #333;
+         font-size: 18px;
+         line-height: 1.8;
+         margin-bottom: 30px;
+      }
+
+      .content-section h2 {
+         font-size: 32px;
+         color: #222;
+         margin-bottom: 20px;
+      }
+
+      .content-section h3 {
+         font-size: 24px;
+         color: #444;
+         margin-top: 20px;
+         margin-bottom: 10px;
+         font-weight: bold;
+      }
+
+      .content-section p {
+         margin-bottom: 15px;
+         font-size: 18px;
+         line-height: 1.8;
+      }
+
+      .content-section p strong {
+         font-weight: bold;
+      }
+
+      /* Footer styles */
+      .footer {
+         position: relative;
+         width: 100%;
+         text-align: center;
+         font-size: 16px;
+         padding: 20px;
+         background-color: #333;
+         color: orange;
+         margin-top: 50px;
+         box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+         .navbar {
+            flex-direction: column;
+            gap: 10px;
+         }
+
+         .image-container img {
+            max-width: 90%;
+         }
+
+         .content-section {
+            padding: 20px;
+            font-size: 16px;
+         }
+      }
+   </style>
+</head>
+<body>
+
+   <!-- Navbar -->
+   <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="information.html">Information</a>
+      <a href="about.html">More Guides</a>
+      <a href="contact.html">Contact</a>
+   </div>
+
+   <!-- Main Content -->
+   <div class="container">
+      <div class="image-container">
+         <img src="spatha.jpg" alt="Foxhole Image" class="first-image">
+         <img src="85k-a-spatha.jpg" alt="Foxhole Image" class="second-image">
+      </div>
+
+      <div class="content-section">
+         <h2>Tank Guide</h2>
+
+         <h3>1. Acquiring a Tank</h3>
+         <p>
+            <strong>Research:</strong> You need to research the tank through your faction's tech tree.
+            <br>
+            <strong>Assembly:</strong> Once unlocked, tanks can be built at a vehicle factory by gathering the necessary materials (metal, oil, etc.).
+            <br>
+            <strong>Assembly Stations:</strong> After gathering the materials, players can assemble tanks at vehicle assembly stations or advanced vehicle workshops.
+         </p>
+
+         <h3>2. Tank Types</h3>
+         <p>
+            <strong>Light Tank:</strong> A faster, smaller tank with lower armor but more maneuverable.
+            <br>
+            <strong>Heavy Tank:</strong> A slower, more powerful tank with heavy armor and high damage but less mobility.
+         </p>
+
+         <h3>3. Tank Controls</h3>
+         <p>
+            <strong>Movement:</strong> Use WASD for tank movement.
+            <br>
+            <strong>W</strong> to move forward.
+            <br>
+            <strong>S</strong> to move backward.
+            <br>
+            <strong>A</strong> and <strong>D</strong> for turning left and right.
+         </p>
+         <p>
+            <strong>Gunner/Driver:</strong>
+            <br>
+            Left Mouse Button (LMB): Fire the main cannon.
+            <br>
+            Right Mouse Button (RMB): Aim or zoom in (depending on your role).
+         </p>
+         <p>
+            <strong>Tank Commands:</strong>
+            <br>
+            Q/E to rotate the turret (gunner).
+            <br>
+            F to toggle between first-person and third-person views (driver or gunner).
+         </p>
+
+         <h3>4. Tank Roles</h3>
+         <p>
+            <strong>Driver:</strong> Responsible for moving the tank and positioning it. You can drive it into combat zones, set up ambushes, or retreat when needed.
+            <br>
+            <strong>Gunner:</strong> Responsible for firing the main cannon and secondary weapons (like machine guns) at targets.
+         </p>
+
+         <h3>5. Tank Tactics</h3>
+         <p>
+            <strong>Positioning:</strong> Tanks work best when positioned strategically. Try to stay behind cover (e.g., hills, buildings) and use terrain to your advantage.
+            <br>
+            <strong>Support:</strong> Coordinate with infantry to clear paths or provide cover fire for them.
+            <br>
+            <strong>Hit and Run:</strong> Use the tank's mobility to hit enemy positions quickly and then retreat to safety.
+            <br>
+            <strong>Armor:</strong> Heavy tanks should lead assaults due to their durability, while light tanks can scout and harass enemies.
+         </p>
+
+         <h3>6. Tank Vulnerabilities</h3>
+         <p>
+            <strong>Anti-Tank Weapons:</strong> Tanks are vulnerable to anti-tank grenades, AT guns, and explosive devices. Always be aware of these threats.
+            <br>
+            <strong>Flanks and Rear:</strong> The rear and sides of a tank are weaker than the front. Try to face enemies head-on, or use terrain to hide your vulnerable parts.
+         </p>
+
+         <h3>7. Repairing and Rearming Tanks</h3>
+         <p>
+            <strong>Repairs:</strong> You can repair damaged tanks at repair stations using resources like scrap metal or other supplies.
+            <br>
+            <strong>Rearming:</strong> Resupply your tank with ammunition at supply depots or rearming stations.
+         </p>
+      </div>
+   </div>
+
+   <!-- Footer -->
+   <div class="footer">
+      <p>CFIT Foxhole</p>
+   </div>
+
+</body>
+</html>
